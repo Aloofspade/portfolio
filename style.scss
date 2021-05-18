@@ -261,7 +261,8 @@ a{
   .image{
       margin-right: 10px;
   }
- 
+
+
 
   .profile{
     display: flex;
@@ -289,8 +290,16 @@ a{
         margin: auto;
         padding: auto;
     }
+   
   }
 
+
+  @media only screen and (max-width: 600px) {
+    h1{
+        text-align: center;
+        float: left;
+    }
+  }
 //   Dropdown
 .dropdown-menu{
     img{
