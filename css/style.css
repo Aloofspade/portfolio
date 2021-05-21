@@ -296,10 +296,20 @@ img:hover {
 }
 
 footer {
-  height: 50px;
+  height: 120px;
+  margin: 10px;
   text-align: center;
-  padding: 3px;
+  padding: 2px;
   background-color: #071B8C;
   color: white;
+}
+
+@media only screen and (max-width: 880px) {
+  footer{
+    margin-top: 100px;
+    height: 100%;
+    width: 100%;
+  }
+
 }
 /*# sourceMappingURL=style.css.map */

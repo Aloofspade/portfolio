@@ -155,4 +155,28 @@
   
   })(jQuery);
 
+
+  document.querySelector(document).ready(function () {
+
+    document.querySelector("nav a").addEventListener("click", function (event) {
+      event.preventDefault();
+      document.querySelector("nav").classList.add("fixed");
+      id = (document.querySelector(this).attr("href"));
+      scrollVertical = document.querySelector(id).offset().top;
+  
+      document.querySelector("body, html").animate({ scrollTop: scrollVertical });
+    });
+  
+    document.querySelector(document).addEventListener("scroll", function () {
+      secondPage = document.querySelector("nav li:nth-child(2) a").attr("href");
+  
+      if (document.body.scrollTop >= document.querySelector("nav").height()) {
+        document.querySelector("nav").classList.add("fixed");
+      } else {
+        document.querySelector("nav").removeClass("fixed");
+      }
+    });
+  
+  });
+
  
